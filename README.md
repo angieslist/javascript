@@ -833,7 +833,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
   - **Always** add a space after a javascript keyword before the next character, unless its a semicolon or end of line
 
-  - Place 1 space before the opening parenthesis in control statements (`if`, `while` etc.). Place no space before the argument list in function calls and declarations.
+  - Place 1 space before the opening parenthesis in control statements (`if`, `while`, anonymous `function` etc.). Place no space before the argument list in function calls and declarations.
 
     ```javascript
     // bad
@@ -854,6 +854,16 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     // good
     function fight() {
       console.log('Swooosh!');
+    }
+    
+    //bad
+    function(element) {
+      console.log(element);
+    }
+
+    //good
+    function (element) {
+      console.log(element);
     }
     ```
 
