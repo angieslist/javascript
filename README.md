@@ -505,6 +505,35 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     }
     ```
 
+  - Avoid reusing variables and especially don't change a variables type with an assignment.
+
+  ```
+  var filterAndConcat = function (strings) {
+
+    // bad
+    strings = strings.map(function (s) { s.match(/^a/); });
+
+    // really bad -- changing type from array to string.
+    strings = strings.join(', ');
+
+    return strings;
+
+  };
+
+
+  var filterAndConcat = function (stringList) {
+
+    // good
+    var myStringList = strings.map(function (s) { s.match(/^my/); });
+
+    // good
+    var myString = strings.join(', ');
+
+    return myString;
+
+  };
+  ```
+
 **[⬆ back to top](#table-of-contents)**
 
 
