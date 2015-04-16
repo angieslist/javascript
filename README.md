@@ -213,6 +213,22 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
       'with this, you would get nowhere fast.';
     ```
 
+  - Note also that multi-line strings can be easily and clearly represented in JSX:
+
+   ```javascript
+   var myParagraph = <p>
+     This is a content string that expresses a long coherent, yet rambling
+     thought because of Batman. When you stop to think about how Batman had
+     anything to do with this, you would get nowhere fast.
+  </p>;
+  ```
+  or in ES6 with template string:
+  ```
+  var = errorMessage = `This is a super long error that was thrown because
+    of Batman. When you stop to think about how Batman had anything to do
+    with this, you would get nowhere fast.`;
+ ```
+
   - When programmatically building up a string, use Array#join instead of string concatenation. Mostly for IE: [jsPerf](http://jsperf.com/string-vs-array-concat/2).
 
     ```javascript
