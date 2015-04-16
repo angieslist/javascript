@@ -511,7 +511,9 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
   var filterAndConcat = function (strings) {
 
     // bad
-    strings = strings.map(function (s) { s.match(/^a/); });
+    strings = strings.map(function (s) {
+      return s.match(/^a/);
+    });
 
     // really bad -- changing type from array to string.
     strings = strings.join(', ');
@@ -524,7 +526,9 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
   var filterAndConcat = function (stringList) {
 
     // good
-    var myStringList = strings.map(function (s) { s.match(/^my/); });
+    var myStringList = strings.map(function (s) {
+      return s.match(/^my/);
+    });
 
     // good
     var myString = strings.join(', ');
