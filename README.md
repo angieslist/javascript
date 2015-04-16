@@ -505,7 +505,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     }
     ```
 
-  - Avoid reusing variables and especially don't change a variables type with an assignment.
+  - Avoid reusing variables and especially don't change a variable's type with an assignment.
 
   ```
   var filterAndConcat = function (strings) {
