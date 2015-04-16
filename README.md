@@ -301,6 +301,9 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
       console.log('Welcome to the Internet. Please follow me.');
     })();
     ```
+  - Note on IIFEs. Although they are a JS idiom, they should nevertheless be avoided.
+  They are almost always hard to read, and usually not necessary. In particular in ES6
+  the `let` keyword should be used for limiting local variable scope instead of IIFEs.
 
   - Never declare a function in a non-function block (if, while, etc). Assign the function to a variable instead. Browsers will allow you to do it, but they all interpret it differently, which is bad news bears.
   - **Note:** ECMA-262 defines a `block` as a list of statements. A function declaration is not a statement. [Read ECMA-262's note on this issue](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
