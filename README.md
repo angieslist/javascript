@@ -96,7 +96,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     };
     ```
 
-  - Use readable synonyms in place of reserved words.
+  - Use readable meaningful names in place of reserved words.
 
     ```javascript
     // bad
@@ -109,9 +109,14 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
       klass: 'alien'
     };
 
-    // good
+    // bad ('type' is not a reserved word, but it's so overloaded it might as well be.)
     var superman = {
       type: 'alien'
+    };
+
+    // good
+    var superman = {
+      originType: 'alien'
     };
     ```
 
@@ -871,7 +876,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     function fight() {
       console.log('Swooosh!');
     }
-    
+
     //bad
     function(element) {
       console.log(element);
