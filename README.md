@@ -1313,20 +1313,6 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     }
     ```
 
-  - **Try** to name your functions. This is helpful for stack traces.
-
-    ```javascript
-    // bad
-    var log = function (msg) {
-      console.log(msg);
-    };
-
-    // good
-    var log = function log(msg) {
-      console.log(msg);
-    };
-    ```
-
   - **Note:** IE8 and below exhibit some quirks with named function expressions.  See [http://kangax.github.io/nfe/](http://kangax.github.io/nfe/) for more info.
 
   - If your file exports a single class, your filename should be exactly the name of the class.
