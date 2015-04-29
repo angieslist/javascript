@@ -96,7 +96,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     };
     ```
 
-  - Use readable synonyms in place of reserved words.
+  - Use readable meaningful names in place of reserved words.
 
     ```javascript
     // bad
@@ -109,9 +109,14 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
       klass: 'alien'
     };
 
-    // good
+    // bad ('type' is not a reserved word, but it's so overloaded it might as well be.)
     var superman = {
       type: 'alien'
+    };
+
+    // good
+    var superman = {
+      originType: 'alien'
     };
     ```
 
@@ -213,6 +218,22 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
       'with this, you would get nowhere fast.';
     ```
 
+  - Note also that multi-line strings can be easily and clearly represented in JSX:
+
+   ```javascript
+   var myParagraph = <p>
+     This is a content string that expresses a long coherent, yet rambling
+     thought because of Batman. When you stop to think about how Batman had
+     anything to do with this, you would get nowhere fast.
+  </p>;
+  ```
+  or in ES6 with template string:
+  ```
+  var = errorMessage = `This is a super long error that was thrown because
+    of Batman. When you stop to think about how Batman had anything to do
+    with this, you would get nowhere fast.`;
+ ```
+
   - When programmatically building up a string, use Array#join instead of string concatenation. Mostly for IE: [jsPerf](http://jsperf.com/string-vs-array-concat/2).
 
     ```javascript
@@ -280,6 +301,9 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
       console.log('Welcome to the Internet. Please follow me.');
     })();
     ```
+  - Note on IIFEs. Although they are a JS idiom, they should nevertheless be avoided.
+  They are almost always hard to read, and usually not necessary. In particular in ES6
+  the `let` keyword should be used for limiting local variable scope instead of IIFEs.
 
   - Never declare a function in a non-function block (if, while, etc). Assign the function to a variable instead. Browsers will allow you to do it, but they all interpret it differently, which is bad news bears.
   - **Note:** ECMA-262 defines a `block` as a list of statements. A function declaration is not a statement. [Read ECMA-262's note on this issue](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
@@ -480,6 +504,39 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
       return true;
     }
     ```
+
+  - Avoid reusing variables and especially don't change a variable's type with an assignment.
+
+  ```
+  var filterAndConcat = function (strings) {
+
+    // bad
+    strings = strings.map(function (s) {
+      return s.match(/^a/);
+    });
+
+    // really bad -- changing type from array to string.
+    strings = strings.join(', ');
+
+    return strings;
+
+  };
+
+
+  var filterAndConcat = function (stringList) {
+
+    // good
+    var myStringList = strings.map(function (s) {
+      return s.match(/^my/);
+    });
+
+    // good
+    var myString = strings.join(', ');
+
+    return myString;
+
+  };
+  ```
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -740,24 +797,24 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
   - Prefixing your comments with `FIXME` or `TODO` helps other developers quickly understand if you're pointing out a problem that needs to be revisited, or if you're suggesting a solution to the problem that needs to be implemented. These are different than regular comments because they are actionable. The actions are `FIXME -- need to figure this out` or `TODO -- need to implement`.
 
-  - Use `// FIXME:` to annotate problems.
+  - Use `// FIXME(name):` to annotate problems.
 
     ```javascript
     function Calculator() {
 
-      // FIXME: shouldn't use a global here
+      // FIXME(hrc): shouldn't use a global here
       total = 0;
 
       return this;
     }
     ```
 
-  - Use `// TODO:` to annotate solutions to problems.
+  - Use `// TODO(name):` to annotate solutions to problems.
 
     ```javascript
     function Calculator() {
 
-      // TODO: total should be configurable by an options param
+      // TODO(bso): total should be configurable by an options param
       this.total = 0;
 
       return this;
@@ -855,7 +912,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
     function fight() {
       console.log('Swooosh!');
     }
-    
+
     //bad
     function(element) {
       console.log(element);
@@ -1254,20 +1311,6 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
         console.log(self);
       };
     }
-    ```
-
-  - **Try** to name your functions. This is helpful for stack traces.
-
-    ```javascript
-    // bad
-    var log = function (msg) {
-      console.log(msg);
-    };
-
-    // good
-    var log = function log(msg) {
-      console.log(msg);
-    };
     ```
 
   - **Note:** IE8 and below exhibit some quirks with named function expressions.  See [http://kangax.github.io/nfe/](http://kangax.github.io/nfe/) for more info.
