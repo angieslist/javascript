@@ -305,6 +305,24 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
   They are almost always hard to read, and usually not necessary. In particular in ES6
   the `let` keyword should be used for limiting local variable scope instead of IIFEs.
 
+- Never wrap a function in parenthesis unless it is a immediately-invoked function expression (IIFE)
+
+    ```javascript
+    // bad
+    (function () {
+      // ...stuff...
+    })
+
+    // good
+    function () {
+      // ...stuff...
+    }
+    
+    (function () {
+      // ...iife stuff...
+    })();
+    ```
+    
   - Never declare a function in a non-function block (if, while, etc). Assign the function to a variable instead. Browsers will allow you to do it, but they all interpret it differently, which is bad news bears.
   - **Note:** ECMA-262 defines a `block` as a list of statements. A function declaration is not a statement. [Read ECMA-262's note on this issue](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
 
