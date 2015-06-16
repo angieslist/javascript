@@ -1,23 +1,20 @@
 {
-  "name": "airbnb-style",
+  "name": "angieslist-javascript-styleguide",
   "version": "1.0.0",
   "description": "A mostly reasonable approach to JavaScript.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript.git"
+    "url": "https://github.com/javascript/javascript.git"
   },
   "keywords": [
     "style guide",
     "lint",
-    "airbnb"
+    "angieslist"
   ],
-  "author": "Harrison Shoff <hi@hshoff.com> (https://twitter.com/hshoff)",
+  "author": "Dan Rigsby <danrigsby@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/airbnb/javascript/issues"
   },
-  "homepage": "https://github.com/airbnb/javascript"
+  "homepage": "https://github.com/angieslist/javascript"
 }
