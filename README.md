@@ -305,7 +305,7 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
   They are almost always hard to read, and usually not necessary. In particular in ES6
   the `let` keyword should be used for limiting local variable scope instead of IIFEs.
 
-- Never wrap a function in parenthesis unless it is a immediately-invoked function expression (IIFE)
+  - Never wrap a function in parenthesis unless it is a immediately-invoked function expression (IIFE)
 
     ```javascript
     // bad
@@ -691,6 +691,13 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
       // ...stuff...
     }
     ```
+
+  - Never compare something againt itself
+  ```javascript
+  // bad
+  if (true === true) {
+  }
+  ```
 
   - For more information see [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) by Angus Croll.
 
