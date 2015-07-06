@@ -282,6 +282,23 @@ Based off of [AirBnB's style guide](https://github.com/airbnb/javascript).
 
 
 ## Functions
+  - Try to keep functions names to follow the _verb_ or _verb_ + _object_ naming convention.  This denotes that the function is performing some action and is not a variable.
+    ```javascript
+    // bad
+    function messageId() {
+      // ...stuff...
+    }
+
+    // good
+    function getMessageId() {
+      // ...stuff...
+    }
+
+    // good
+    function load() {
+      // ...stuff...
+    }
+    ```
 
   - Function expressions:
 
