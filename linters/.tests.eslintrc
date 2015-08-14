@@ -1,5 +1,18 @@
 {
   "rules": {
+    "one-var": 0,
+    "one-variable-per-var/one-variable-per-var": 0,
     "no-unused-expressions": 0
+  },
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": false,
+    "SPEC_SETUP": true,
+    "WITH_PAGE": true,
+    "WITH_COMPONENT": true,
+    "WITH_MODULE": true
   }
 }
