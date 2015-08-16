@@ -123,7 +123,7 @@
     "no-sync": 0,
 
     /* Stylistic Issues */
-    "brace-style": [2, "2tbs"],
+    "brace-style": [2, "1tbs"],
     "camelcase": 0,
     "comma-spacing": [2, {"before": false, "after": true}],
     "comma-style": [2, "last"],
