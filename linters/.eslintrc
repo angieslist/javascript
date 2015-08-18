@@ -4,7 +4,6 @@
   "parser": "babel-eslint",
 
   "plugins": [
-    "one-variable-per-var",
     "react",
     "requirejs"
   ],
@@ -196,10 +195,6 @@
     "max-statements": 0,
     "no-bitwise": 0,
     "no-plusplus": 0,
-
-    /* Plugin: one-variable-per-var */
-    /* All rules are documented https://github.com/greggman/eslint-plugin-one-variable-per-var */
-    "one-variable-per-var/one-variable-per-var": 2,
 
     /* Plugin: react  */
     /* All rules are documented https://github.com/yannickcr/eslint-plugin-react */
