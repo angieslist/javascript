@@ -131,7 +131,7 @@
     "func-names": 0, /* always keep this off */
     "func-sytle": 0,
     "id-length": 0,
-    "indent": [2, 2],
+    "indent": 0, /* [2, 2], */
     "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
     "lines-around-comment": 0,
     "linebreak-style": 0,
