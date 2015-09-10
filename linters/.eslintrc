@@ -199,7 +199,7 @@
     /* Plugin: react  */
     /* All rules are documented https://github.com/yannickcr/eslint-plugin-react */
     "react/display-name": 0,
-    "react/jsx-boolean-value": 2,
+    /* "react/jsx-boolean-value": 2, */ /* reenable once we have static versions */
     "react/jsx-curly-spacing": [2, "never"],
     "react/jsx-max-props-per-line": 0,
     "react/jsx-no-duplicate-props": 2,
