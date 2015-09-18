@@ -138,7 +138,7 @@
     "id-length": 0,
     "id-match": 0,
     "indent": [2, 2],
-    "jsx-quotes": [2, "prefer-single"],
+    /* "jsx-quotes": [2, "prefer-single"], */ /* ISSUES */
     "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
     "lines-around-comment": 0,
     "linebreak-style": 0,
