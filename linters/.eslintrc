@@ -154,7 +154,7 @@
     "no-multiple-empty-lines": [2, {max: 2}],
     "no-nested-ternary": 2,
     "no-new-object": 2,
-    "no-restricted-syntax": [2, "WithStatement"],
+    /* "no-restricted-syntax": [2, "WithStatement"], */ /* ENABLE SOON */
     "no-spaced-func": 2,
     "no-ternary": 0, /* always keep this off */
     "no-trailing-spaces": 2,
