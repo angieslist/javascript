@@ -1,0 +1,58 @@
+{
+  "extends": "airbnb",
+
+  "no-constant-condition": 1,
+  "valid-jsdoc": 2,
+  "no-unexpected-multiline": 2,
+
+  "curly": 2,
+  "no-alert": 2,
+  "no-eq-null": 2,
+  "no-void": 2,
+  "vars-on-top": 0,
+
+  "no-label-var": 2,
+  "no-undef-init": 2,
+
+  "callback-return": [2, ["callback", "cb", "next"]],
+  "handle-callback-err": 2,
+  "no-mixed-requires": 2,
+  "no-new-require": 2,
+  "no-path-concat": 2,
+  "no-process-exit": 2,
+  "no-restricted-modules": 2,
+
+  "brace-style": [2, "1tbs"],
+  "consistent-this": [2, "self"],
+  "func-names": 0,
+  "jsx-quotes": [2, "prefer-double"],
+  "new-parens": 2,
+  "no-continue": 2,
+  "no-lonely-if": 2,
+  "quotes": [2, "single"],
+  "space-infix-ops": [2, {"int32Hint": true}],
+  "space-unary-ops": 2,
+  "wrap-regex": 2,
+
+  "arrow-parens": 2,
+  "constructor-super": 2,
+  "no-this-before-super": 2,
+  "no-var": 0, /* one day remove this */
+  "prefer-arrow-callback": 0, /* one day remove this */
+  "prefer-template": 0, /* one day remove this */
+  "require-yield": 2,
+
+  "max-depth": [2, 6],
+  "max-len": 0,
+  "max-params": [2, 6],
+
+  "jsx-a11y/img-uses-alt": 2,
+  "jsx-a11y/onclick-uses-role": 2,
+  "jsx-a11y/mouse-events-map-to-key-events": 2,
+  "jsx-a11y/use-onblur-not-onchange": 2,
+  "jsx-a11y/no-access-key": 2,
+  "jsx-a11y/label-uses-for:": 2,
+  "jsx-a11y/redundant-alt": 2,
+  "jsx-a11y/no-hash-href": 2,
+  "jsx-a11y/valid-aria-role": 2
+}
