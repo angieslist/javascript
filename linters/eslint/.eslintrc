@@ -79,6 +79,10 @@
     "jsx-a11y/no-hash-href": 2,
     "jsx-a11y/valid-aria-role": 2,
 
+    "react/no-direct-mutation-state": 2,
+    "react/no-danger": 2,
+    "react/jsx-key": 2,
+    "react/jsx-no-duplicate-props": 2,
     "react/jsx-boolean-value": 0,
     "react/jsx-closing-bracket-location": [0, "tag-aligned"],
     "react/jsx-indent-props": [1, 2],
