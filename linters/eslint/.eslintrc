@@ -57,7 +57,7 @@
     "arrow-parens": 2,
     "constructor-super": 2,
     "no-this-before-super": 2,
-    "no-var": 0, /* one day remove this */
+    "no-var": 1, /* one day remove this */
     "object-shorthand": [0, "always"],
     "prefer-arrow-callback": 0, /* one day remove this */
     "prefer-const": 1,
