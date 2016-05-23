@@ -70,6 +70,7 @@
     "max-depth": [2, 6],
     "max-len": 0,
     "max-params": [2, 6],
+    "global-require": 0, /* need to be able to require in images for webpack */
 
     "no-underscore-dangle" : 0,
     "import/no-unresolved": 0, /* must stay off while we use requirejs */
