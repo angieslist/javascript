@@ -1,4 +1,4 @@
-## `.eslintrc`
+# ESLint Rules
 
 Our `.eslintrc` requires the following NPM packages:
 
