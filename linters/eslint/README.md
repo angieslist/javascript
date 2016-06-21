@@ -1,21 +1,6 @@
 # ESLint Rules
 
-Our `.eslintrc` requires the following NPM packages:
-
+Run the following in the directory that you want to apply the rules to:
 ```
-npm install --save-dev \
-  angielist/javascript \
-  babel-eslint \
-  eslint \
-  eslint-config-airbnb \
-  eslint-plugin-import \
-  eslint-plugin-jsx-ally \
-  eslint-plugin-react
-```
-
-Then create an `.eslintrc` file in the root of your project with the following body:
-```
-{
-  "extends": "./node_modules/angieslist-javascript-styleguide/linters/eslint/.eslintrc",
-}
+npm install eslint-config-angieslist --save-dev && echo "{ \"extends\": \"angieslist\" }" > .eslintrc
 ```
