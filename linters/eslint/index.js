@@ -36,6 +36,7 @@ module.exports = {
     'no-useless-escape': 1,
     'no-extra-parens': 0,
     'newline-per-chained-call': 0,
+    'padded-block': [1, 'never'],
 
     'brace-style': [2, '1tbs'],
     'consistent-this': [2, 'self'],
@@ -48,11 +49,11 @@ module.exports = {
     'no-continue': 2,
     'no-lonely-if': 2,
     'no-unneeded-ternary': 1,
-    'object-curly-spacing': 0,
+    'object-curly-spacing': 1,
     'quotes': [2, 'single'],
     'quote-props': 0, // [2, 'as-needed'],
     'space-in-parens': 1,
-    'space-infix-ops': [2, {'int32Hint': true}],
+    'space-infix-ops': [2, { 'int32Hint': true }],
     'space-unary-ops': 2,
     'wrap-regex': 2,
 
