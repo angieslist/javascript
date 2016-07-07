@@ -1,6 +1,6 @@
 {
-  "name": "angieslist-eslint-config",
-  "version": "9.0.3",
+  "name": "eslint-config-angieslist",
+  "version": "9.0.5",
   "description": "Angies list's ESLint config, following our styleguide",
   "repository": {
     "type": "git",
